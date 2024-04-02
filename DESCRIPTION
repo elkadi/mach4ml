@@ -4,7 +4,7 @@ Title: mach4ml
 Version: 0.1.0
 Author: Omar Anwar Elkadi
 Maintainer: Omar Anwar Elkadi <omar.elkadi@live.com>
-Description: a package for handling and analyzings data from biomomentum Mach-1.
+Description: a package for handling and analyzings data from biomomentum Mach-1 with special consideration for machine learning applications (large data sets).
 License: MIT License
 Encoding: UTF-8
 LazyData: true
