@@ -11,6 +11,7 @@ Extract_Stress_Relaxation_MultiFiles<-function(folder_path){
   ####A.Importing and prepating data#######
   ##importing Files all files in a folder ending with .txt
   files <- Sys.glob(paste0(folder_path,"\\*.txt"))
+  bnames<-basename(files)
   ##Extracting stress relaxation for all
   SRR<-lapply(files,Extract_Stress_Relaxation)
   ##extracting time and steps data
@@ -34,7 +35,7 @@ Extract_Stress_Relaxation_MultiFiles<-function(folder_path){
 
   ##Appropriate naming
   ###Samples names
-  names(SRR)<-list.files(folder_path, pattern = "*.txt")
+  names(SRR)<-bnames
   names(SRR)<-sub(".txt", "", names(SRR))
   ###Wavelength names
   colnames(T)<-"Time"
