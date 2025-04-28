@@ -19,6 +19,6 @@ Hayes_correction<-function(Modulus,indenterradius,Thicknesses,v=0.5){
   points<-c(indenterradius[1]/Thicknesses[1],indenterradius/Thicknesses[2],indenterradius/Thicknesses[3])
   K_values <- spline(pt, Kin, xout = points, method = "natural")
   Hcfn<-((1-v^2))*pi*indenterradius/2
-  Modulus_HC<-Hcfn*Modulus/(K_values[[1]][1]*Thicknesses[1])
+  Modulus_HC<-Hcfn*Modulus/(K_values[[2]][1]*Thicknesses[1])
   Modulus_HC
 }
