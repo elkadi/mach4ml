@@ -17,6 +17,6 @@ calculate_Eq_Modulus<-function(Se1,Se2,Se3,Indentation_area,Strains){
   Ste3<-Se3/Indentation_area
   EqModulus<-NULL
   for (r in 1:nrow(Ste1)){
-    EqModulus<-rbind(EqModulus,lm(c(Ste1[r],Ste2[r],Ste3[r]) ~ Strain)[[1]][2])}
+    EqModulus<-rbind(EqModulus,lm(c(Ste1[r],Ste2[r],Ste3[r]) ~ Strains)[[1]][2])}
   EqModulus
 }
