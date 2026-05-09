@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use mach4ml in your research, please cite it using the metadata from this file."
+title: "mach4ml: Tools for processing Biomomentum MACH-1 stress-relaxation data"
+type: software
+authors:
+  - family-names: Elkadi
+    given-names: Omar Anwar
+    email: omar.elkadi@live.com
+repository-code: "https://github.com/elkadi/mach4ml"
+url: "https://github.com/elkadi/mach4ml"
+abstract: "mach4ml is an R package for extracting, cleaning, organizing, and analyzing Biomomentum MACH-1 text exports, with a focus on stress-relaxation experiments and high-throughput workflows for downstream analysis or machine-learning applications."
+license: GPL-2.0-or-later
+version: 0.1.0.9000
+date-released: 2026-05-08
+keywords:
+  - R
+  - biomechanics
+  - Biomomentum MACH-1
+  - stress relaxation
+  - elastic modulus
+  - machine learning

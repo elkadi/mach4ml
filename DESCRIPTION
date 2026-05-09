@@ -1,7 +1,7 @@
 Package: mach4ml
 Type: Package
 Title: mach4ml
-Version: 0.1.0
+Version: 0.1.0.9000
 Author: Omar Anwar Elkadi
 Maintainer: Omar Anwar Elkadi <omar.elkadi@live.com>
 Description: a package for handling and analyzing data from biomomentum Mach-1 with special consideration for machine learning applications (large data sets).

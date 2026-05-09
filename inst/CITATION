@@ -1,0 +1,8 @@
+bibentry(
+  bibtype = "Manual",
+  title = "mach4ml: Tools for processing Biomomentum MACH-1 stress-relaxation data",
+  author = person("Omar Anwar", "Elkadi"),
+  year = "2026",
+  note = "R package version 0.1.0.9000",
+  url = "https://github.com/elkadi/mach4ml"
+)
