@@ -28,6 +28,10 @@ Load the package:
 library(mach4ml)
 ```
 
+## Version status
+
+This repository currently uses the pre-release/development R package version `0.1.0.9000`. In R package versioning, the `.9000` suffix is commonly used to indicate development work after a released version and before the next formal release.
+
 ## Requirements
 
 `mach4ml` requires:
@@ -194,7 +198,27 @@ This assumes the raw force values are compatible with conversion from gram-force
 
 ## Citation and attribution
 
-If you use `mach4ml` in research, cite this repository and acknowledge the underlying MACH-1 instrument/export workflow. The package was authored by Omar Anwar Elkadi and is licensed under GPL >= 2.
+If you use `mach4ml` in research, please cite the package. GitHub can read the repository-level `CITATION.cff` file, and R can read the package-level `inst/CITATION` file.
+
+After installing the package, run:
+
+```r
+citation("mach4ml")
+```
+
+Suggested citation:
+
+```bibtex
+@Manual{mach4ml,
+  title = {mach4ml: Tools for processing Biomomentum MACH-1 stress-relaxation data},
+  author = {Omar Anwar Elkadi},
+  year = {2026},
+  note = {R package version 0.1.0.9000},
+  url = {https://github.com/elkadi/mach4ml}
+}
+```
+
+The package was authored by Omar Anwar Elkadi and is licensed under GPL >= 2.
 
 ## License
 
