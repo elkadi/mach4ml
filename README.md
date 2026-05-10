@@ -28,10 +28,6 @@ Load the package:
 library(mach4ml)
 ```
 
-## Version status
-
-This repository currently uses the pre-release/development R package version `0.1.0.9000`. In R package versioning, the `.9000` suffix is commonly used to indicate development work after a released version and before the next formal release.
-
 ## Requirements
 
 `mach4ml` requires:
@@ -59,7 +55,7 @@ Time, z, x, y, Fz, Step
 
 For multi-file workflows, place one or more MACH-1 `.txt` files in a single folder. File names are used as sample names.
 
-See [Data format](docs/data-format.md) for details.
+See [Data format](docs-data-format.md) for details.
 
 ## Quick start: calculate moduli from a folder of MACH-1 files
 
@@ -132,7 +128,7 @@ params <- Extract_SR_Parameters2(
 )
 ```
 
-See [Workflows](docs/workflows.md) for complete examples.
+See [Workflows](docs-workflows.md) for complete examples.
 
 ## Main functions
 
@@ -174,7 +170,7 @@ See [Workflows](docs/workflows.md) for complete examples.
 | `calculate_moduli_multifiles()` | Extract, clean, smooth, and calculate moduli for a three-step protocol. |
 | `calculate_moduli_multifiles2()` | Updated multi-file pipeline with baseline normalization and adjustable equilibrium window. |
 
-See [API reference](docs/api-reference.md) for arguments, return values, and examples.
+See [API reference](docs-api-reference.md) for arguments, return values, and examples.
 
 ## Units and assumptions
 
@@ -190,35 +186,15 @@ This assumes the raw force values are compatible with conversion from gram-force
 
 ## Documentation
 
-- [Getting started](docs/getting-started.md)
-- [Data format](docs/data-format.md)
-- [Workflows](docs/workflows.md)
-- [API reference](docs/api-reference.md)
-- [Troubleshooting](docs/troubleshooting.md)
+- [Getting started](docs-getting-started.md)
+- [Data format](docs-data-format.md)
+- [Workflows](docs-workflows.md)
+- [API reference](docs-api-reference.md)
+- [Troubleshooting](docs-troubleshooting.md)
 
 ## Citation and attribution
 
-If you use `mach4ml` in research, please cite the package. GitHub can read the repository-level `CITATION.cff` file, and R can read the package-level `inst/CITATION` file.
-
-After installing the package, run:
-
-```r
-citation("mach4ml")
-```
-
-Suggested citation:
-
-```bibtex
-@Manual{mach4ml,
-  title = {mach4ml: Tools for processing Biomomentum MACH-1 stress-relaxation data},
-  author = {Omar Anwar Elkadi},
-  year = {2026},
-  note = {R package version 0.1.0.9000},
-  url = {https://github.com/elkadi/mach4ml}
-}
-```
-
-The package was authored by Omar Anwar Elkadi and is licensed under GPL >= 2.
+If you use `mach4ml` in research, cite this repository and acknowledge the underlying MACH-1 instrument/export workflow. The package was authored by Omar Anwar Elkadi and is licensed under GPL >= 2.
 
 ## License
 
